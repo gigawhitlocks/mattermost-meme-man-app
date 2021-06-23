@@ -1,0 +1,32 @@
+{
+    "type": "ok",
+    "data": [
+	{
+	    "location": "/command",
+	    "bindings": [
+		{
+		    "icon": "icon.png",
+		    "label": "memes",
+		    "description": "Memes",
+		    "hint": "[post or store a meme]",
+		    "bindings": [
+			{
+			    "location": "post-meme",
+			    "label": "post",
+			    "call": {
+				"path": "/send"
+			    }
+			},
+			{
+			    "location": "save-meme",
+			    "label": "save",
+			    "call": {
+				"path": "/send"
+			    }
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}
