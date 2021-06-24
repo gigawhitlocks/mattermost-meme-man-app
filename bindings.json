@@ -2,29 +2,19 @@
     "type": "ok",
     "data": [
 	{
-	    "location": "/command",
+	    "location": "/channel_header",
 	    "bindings": [
 		{
+		    "location": "send-button",
 		    "icon": "icon.png",
-		    "label": "memes",
-		    "description": "Memes",
-		    "hint": "[post or store a meme]",
-		    "bindings": [
-			{
-			    "location": "post-meme",
-			    "label": "post",
-			    "call": {
-				"path": "/send"
-			    }
-			},
-			{
-			    "location": "save-meme",
-			    "label": "save",
-			    "call": {
-				"path": "/send"
-			    }
+		    "label":"send meme man",
+		    "call": {
+			"path": "/post-meme",
+			"expand": {
+			    "app": "all",
+			    "acting_user_access_token": "all"
 			}
-		    ]
+		    }
 		}
 	    ]
 	}
